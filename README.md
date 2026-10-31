@@ -1,7 +1,7 @@
 
-# Railroader Multiscreen Mod
+# Multiscreen (0.6 port) for Railroader
 
-Multiscreen was created by **Macka** ([AMacro/RR-Multiscreen](https://github.com/AMacro/RR-Multiscreen)). This branch is a modified version that ports it to the Railroader 0.6 mod loader (game 0.6.2 and later), offered for inclusion upstream; until Macka publishes it, it is not an official Macka release. See [NOTICE](NOTICE). Versions 1.x, for the pre-0.6 game with Unity Mod Manager, remain on the original repository.
+Multiscreen (0.6 port), a fork by **ashenmare** of [Multiscreen](https://github.com/AMacro/RR-Multiscreen) by **Macka**, ported to the Railroader 0.6 mod loader (game 0.6.2 and later); see [NOTICE](NOTICE). This is not an official release by Macka; versions 1.x, for the pre-0.6 game with Unity Mod Manager, remain on the original repository.
 
 This mod expands Railroader from single to dual screen, allowing you to move game windows (map, company, station, car inspector, etc.) off the main game screen to a second screen. 
 
@@ -15,13 +15,13 @@ This mod expands Railroader from single to dual screen, allowing you to move gam
 Railroader 0.6 loads mods itself; Unity Mod Manager is not used (and should be removed from the game folder if it is still there from an older version).
 
 1. In Railroader, open Preferences and turn on **Allow Unsafe DLL Mods** (Multiscreen is a DLL mod), then restart the game.
-2. Download the latest Multiscreen release and unzip it into the game's `Mods` folder, so you have `Railroader/Mods/Multiscreen/` containing `Info.json`, `Multiscreen.dll`, `0Harmony.dll`, `LICENSE`, `NOTICE` and `LICENSE-Harmony.txt`. Install only one Multiscreen build: the game refuses a second assembly named `Multiscreen` in the same session.
+2. Download the latest Multiscreen release and unzip it into the game's `Mods` folder, so you have `Railroader/Mods/Multiscreen/` containing `Info.json`, `Multiscreen.dll`, `0Harmony.dll`, `LICENSE`, `NOTICE` and `LICENSE-Harmony.txt`. Install only one Multiscreen build (this fork or an official one from Macka, not both): the game refuses a second assembly named `Multiscreen` in the same session.
 3. Ensure your second screen is connected and working in extended mode (on Windows: Windows Key + P > Extend).
 4. Start Railroader and enable Multiscreen in the main menu's Mods screen. It only changes your own screens, and other players in a multiplayer session don't need it.
 
 It is an optional mod, so the game records it in each save's mod list and the save (or, when you join, the host's game) decides: a save or host whose list doesn't include Multiscreen turns it off for that session, while a player who joins without it installed isn't asked for it.
 
-If it is working, the second screen shows a sky background (or your solid colour) as soon as the game starts, and the map and company windows open there. Multiscreen logs to the game's `Player.log` under the identifier in its `Info.json`; at startup it reports the displays it found, whether its window lookup self-test passed, and how many feature patches applied.
+If it is working, the second screen shows a sky background (or your solid colour) as soon as the game starts, and the map and company windows open there. Multiscreen logs to the game's `Player.log` as the `ashenmare/multiscreen` mod; at startup it reports the displays it found, whether its window lookup self-test passed, and how many feature patches applied.
 
 ### Settings file
 Settings are kept in `settings.json` in the mod's folder, written when you change them in game. You can also edit it with the game closed, for example to set `"DebugLogging": "Debug"` (Info, Debug, Trace or Verbose) when reporting a problem.
