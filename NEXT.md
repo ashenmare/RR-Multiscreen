@@ -8,3 +8,5 @@ behavior, canceled, labeled, center, meter, neighbor, license, traveled, modeled
 
 ## RETIRED 2026-11-07 (Dawn: "build everything minus multiscreen, retire that")
 No further work. The open items above are closed by retirement.
+
+- Nexus page: hidden by Dawn; left as is (11-07).
